@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="plus_5_points">+5 points</string>
+    <string name="plus_3_points">+3 points</string>
+    <string name="penalty_points">penalty</string>
+    <string name="free_kick">free kick</string>
+    <string name="reset_game">reset game</string>
+    <string name="toast_score_below_zero_message">Score can\'t be less than 0!</string>
+</resources>

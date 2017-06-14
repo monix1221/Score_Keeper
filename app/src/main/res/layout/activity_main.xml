@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="activityMainViews"
+            type="com.example.android.scorekeeper.MainActivity" />
+    </data>
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fillViewport="true"
+        tools:context="com.example.android.scorekeeper.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/reset_game_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/padding_basic"
+                android:layout_marginBottom="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/padding_basic"
+                android:text="@string/reset_game" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/team_a_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="@dimen/padding_basic"
+                        android:text="Team A" />
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/padding_medium"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_very_big" />
+
+                    <Button
+                        android:id="@+id/plus_5_for_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:text="@string/plus_5_points" />
+
+                    <Button
+                        android:id="@+id/plus_3_for_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:text="@string/plus_3_points" />
+
+                    <Button
+                        android:id="@+id/free_kick_for_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:drawableLeft="@drawable/ic_repeat_one_black_2"
+                        android:text="@string/free_kick" />
+
+                    <Button
+                        android:id="@+id/penalty_a_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:text="@string/penalty_points" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/padding_big"
+                    android:layout_marginTop="@dimen/padding_basic"
+                    android:background="@android:color/darker_gray"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/team_b_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="@dimen/padding_basic"
+                        android:text="Team B" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/padding_medium"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_very_big" />
+
+                    <Button
+                        android:id="@+id/plus_5_for_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:text="@string/plus_5_points" />
+
+                    <Button
+                        android:id="@+id/plus_3_for_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:text="@string/plus_3_points" />
+
+                    <Button
+                        android:id="@+id/free_kick_for_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:drawableLeft="@drawable/ic_repeat_one_black_2"
+                        android:text="@string/free_kick" />
+
+                    <Button
+                        android:id="@+id/penalty_b_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_small"
+                        android:layout_marginLeft="@dimen/padding_medium"
+                        android:layout_marginRight="@dimen/padding_medium"
+                        android:layout_marginTop="@dimen/padding_medium"
+                        android:text="@string/penalty_points" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>
